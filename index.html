@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoBao</title>
+</head>
+
+<body>
+    <body class="text-gray-800">
+        <!-- Header -->
+        <header class="header px-2 bg-white shadow-md sticky top-0 z-50">
+          <div class="w-full mx-auto flex flex-col md:flex-row items-center py-4">
+            <div class="logo-bg p-3 flex items-center space-x-4 pl-5 pr-20">
+              <img src="assets/images/logo.png" alt="Logo" class="h-[50px]">
+              <div class="header-search border px-3 py-3 w-64">
+              <input type="text" placeholder="Nhập từ khóa..." class="search" />
+            </div>
+            </div>
+            <div class="ml-[-30px]">
+              <img src="assets/images/logo-bg.png" class="hidden md:block h-[74px]">
+            </div>
+            <nav class="mt-4 ml-auto">
+              <ul class="flex flex-wrap gap-4 font-medium text-center text-[12px] font-bold">
+                <li>
+                  <a href="#" class="flex flex-col items-center"><img src="assets/images/menu-icon-1.png" alt="" class="mb-1 h-[52px] w-[52px]">
+                  PHÒNG KHÁCH</a>
+                </li>
+                <li class="flex flex-col items-center">
+                  <img src="assets/images/menu-icon-2.png" alt="Kitchen" class="mb-1 h-[52px] w-[52px]">
+                  PHÒNG BẾP
+                </li>
+                <li class="flex flex-col items-center">
+                  <img src="assets/images/menu-icon-3.png" alt="Bedroom" class="mb-1 h-[52px] w-[52px]">
+                  PHÒNG NGỦ
+                </li>
+                <li class="flex flex-col items-center">
+                  <img src="assets/images/menu-icon-4.png" alt="Kids Room" class="mb-1 h-[52px] w-[52px]">
+                  TRẺ EM
+                </li>
+                <li class="flex flex-col items-center">
+                  <img src="assets/images/menu-icon-5.png" alt="Laundry" class="mb-1 h-[52px] w-[52px]">
+                  GIẶT PHƠI
+                </li>
+                <li class="flex flex-col items-center">
+                  <img src="assets/images/menu-icon-6.png" alt="Rest Room" class="mb-1 h-[52px] w-[52px]">
+                  REST ROOM
+                </li>
+                <li class="flex flex-col items-center">
+                  <img src="assets/images/menu-icon-7.png" alt="Model Home" class="mb-1 h-[52px] w-[52px]">
+                  MẪU NHÀ ĐẸP
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="text-sm py-2 px-6 relative">
+            <div class="container mx-auto flex flex-wrap gap-4 relative">
+              <div class="relative cursor-pointer dropdown group">
+                <a class="cursor-pointer font-bold p-2 flex items-center">
+                    <span class="text-sm">Giới thiệu </span>
+                    <div class="ml-2 w-0 h-0 border-t-[10px] border-t-black border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent"></div>
+                </a>
+                <div class="absolute left-0 hidden bg-white shadow-lg rounded-md z-10 group-hover:block">
+                  <ul class="p-4 w-[200px]">
+                    <li class="mb-3"><a href="#" class="py-2">Về chúng tôi</a></li>
+                    <li class="mb-3">Liên hệ</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative cursor-pointer dropdown group">
+                <a class="cursor-pointer font-bold p-2 flex items-center">
+                    <span class="text-sm">Thiết Kế Nội Thất </span>
+                    <div class="ml-2 w-0 h-0 border-t-[10px] border-t-black border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent"></div>
+                </a>
+                <div class="absolute left-0 hidden bg-white shadow-lg rounded-md z-10 group-hover:block">
+                  <ul class="p-4 w-[200px]">
+                    <li class="mb-3"><a href="#" class="py-2">Về chúng tôi</a></li>
+                    <li class="mb-3">Nhà phố - Biệt thự</li>
+                    <li class="mb-3">Căn hộ chung cư</li>
+                    <li class="mb-3">Nhà hàng - Quán cà phê</li>
+                    <li class="mb-3">Showroom - Spa</li>
+                    <li class="mb-3">Văn phòng</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative cursor-pointer dropdown group">
+                <a class="cursor-pointer font-bold p-2 flex items-center">
+                    <span class="text-sm">Thiết Kế Kiến Trúc </span>
+                    <div class="ml-2 w-0 h-0 border-t-[10px] border-t-black border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent"></div>
+                </a>
+                <div class="absolute left-0 hidden bg-white shadow-lg rounded-md z-10 group-hover:block">
+                  <ul class="p-4 w-[200px]">
+                    <li class="mb-3">Nhà phố - Biệt thự</li>
+                    <li class="mb-3">Nhà hàng - Quán cà phê</li>
+                    <li class="mb-3">Showroom - Spa</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative cursor-pointer dropdown group">
+                <a class="cursor-pointer font-bold p-2 flex items-center">
+                    <span class="text-sm">Phong Cách Thiết Kế</span>
+                    <div class="ml-2 w-0 h-0 border-t-[10px] border-t-black border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent"></div>
+                </a>
+                <div class="absolute left-0 hidden bg-white shadow-lg rounded-md z-10 group-hover:block">
+                  <ul class="p-4 w-[200px]">
+                    <li class="mb-3">Hiện đại (Modern)</li>
+                    <li class="mb-3">Tối giản (Minimalism)</li>
+                    <li class="mb-3">Tân cổ điển (Neo-Classical)</li>
+                    <li class="mb-3">Bắc Âu (Scandinavian)</li>
+                    <li class="mb-3">Nhiệt đới (Tropical)</li>
+                    <li class="mb-3">Công nghiệp (Industrial)</li>
+                    <li class="mb-3">Đông dương (Indochine)</li>
+                  </ul>
+                </div>
+            </div>
+            <a class="cursor-pointer font-bold p-2 flex items-center">
+                <span class="text-sm">Công Trình Thực Tế</span>
+            </a>
+            <a class="cursor-pointer font-bold p-2 flex items-center">
+                <span class="text-sm">Báo giá</span>
+            </a>
+            <a class="cursor-pointer font-bold p-2 flex items-center">
+                <span class="text-sm">Tin tức</span>
+            </a>
+            </div>
+          </div>
+        </header>
+      
+        <!-- Swiper Slideshow Section -->
+        <section class="py-8 bg-white">
+          <div>
+            <div class="swiper swiperHeader">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/banners/banner-1.png" alt="Banner 1" class="w-full h-full object-cover">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/banners/banner-2.png" alt="Banner 1" class="w-full h-full object-cover">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/banners/banner-3.png" alt="Banner 1" class="w-full h-full object-cover">
+                </div>
+            </div>
+              <div class="swiper-pagination mt-4"></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto px-6">
+                <div class="flex flex-row gap-3">
+                    <div class="bg-white p-4 mr-10 relative flex-1">
+                        <div>
+                            <p>Về chúng tôi</p>
+                            <h2 class="uppercase text-[35px] font-bold">Hello, We are</h2>
+                            <h2 class="uppercase text-orange-600 text-[35px] font-bold">Gỗ Bào Concerpt</h2>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus</p>
+                        </div>
+                        <div class="absolute right-[-50px] top-[45%] w-0 h-0 border-t-[30px] border-t-transparent border-l-[50px] border-l-black border-b-[30px] border-b-transparent"></div>
+                    
+                    </div>
+                    <div class="bg-white flex-1">
+                        <div class="border h-full rounded-lg p-4">
+                            <img class="mb-2" src="https://placehold.co/400x250" alt="" />
+                        <h3 class="font-bold text-[#EA4E24] mb-2 uppercase">1 giờ trò chuyện cùng chuyên gia</h3>
+                        <p class="mb-2">Đội ngũ thi công của chúng tôi đảm bảo chất lượng và tiến độ công trình theo yêu cầu của khách hàng.</p>
+                            <a href="#" class="text-white inline-flex bg-black px-8 py-1 rounded-lg m-auto">Đăng ký tư vấn</a>
+                        </div>
+                    </div>
+                    <div class="bg-white flex-1">
+                        <div class="border rounded-lg p-4 h-full">
+                            <img class="mb-2" src="https://placehold.co/400x250" alt="" />
+                        <h3 class="font-bold text-[#EA4E24] mb-2 uppercase">1 giờ trò chuyện cùng chuyên gia</h3>
+                        <p class="mb-2">Đội ngũ thi công của chúng tôi đảm bảo chất lượng và tiến độ công trình theo yêu cầu của khách hàng.</p>
+                        <a href="#" class="text-white inline-flex bg-black px-8 py-1 rounded-lg m-auto">Nhận báo giá</a>       
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Left Column: Single Image -->
+                <div>
+                  <img src="assets/images//gallery/z3826839025072_31fb983790798d712ff947f9e11a4d03.jpg" alt="Left Image" class="w-full h-full object-cover">
+                </div>
+                <!-- Right Column: Two Stacked Images -->
+                <div class="grid grid-rows-2 gap-6">
+                  <img src="assets/images//gallery/z6424258632918_a31f8fce9da2c80e9c47426260f96e3e.jpg" alt="Top Right Image" class="w-full h-full object-cover">
+                  <img src="assets/images/gallery/z6452213542834_7d938e196ed254e908e1641060b9ceba.jpg" alt="Bottom Right Image" class="w-full h-full object-cover">
+                </div>
+              </div>
+            </div>
+          </section>
+      
+        <!-- BỘ SƯU TẬP CÔNG TRÌNH NỔI BẬT -->
+        <section class="py-16 bg-white">
+          <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-[#EA4E24] mb-8">BỘ SƯU TẬP CÔNG TRÌNH NỔI BẬT</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- 6 ảnh dạng card có hover text -->
+              <div class="relative group h-64 overflow-hidden">
+                <img src="assets/images/cong-trinh/Thiết kế - Thi công biệt thự KĐT Mỹ Gia An Khánh.jpg" alt="Công trình 1" class="object-cover w-full h-full group-hover:opacity-60 transition duration-300">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-center px-4 opacity-0 group-hover:opacity-100 transition bg-black bg-opacity-50">
+                  Thiết kế - Thi công biệt thự KĐT Mỹ Gia An Khánh
+                </div>
+              </div>
+              <div class="relative group h-64 overflow-hidden">
+                <img src="assets/images/cong-trinh/Thiết kế - Thi công căn hộ anh Tiến.jpg" alt="Công trình 2" class="object-cover w-full h-full group-hover:opacity-60 transition duration-300">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-center px-4 opacity-0 group-hover:opacity-100 transition bg-black bg-opacity-50">
+                  Thiết kế - Thi công căn hộ anh Tiến
+                </div>
+              </div>
+              <div class="relative group h-64 overflow-hidden">
+                <img src="assets/images/cong-trinh/Thiết kế - Thi công nhà anh Kiên.jpg" alt="Công trình 3" class="object-cover w-full h-full group-hover:opacity-60 transition duration-300">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-center px-4 opacity-0 group-hover:opacity-100 transition bg-black bg-opacity-50">
+                  Thiết kế - Thi công nhà anh Kiên
+                </div>
+              </div>
+              <div class="relative group h-64 overflow-hidden">
+                <img src="assets/images/cong-trinh/Thiết kế - Thi công nội thất biệt thự anh Hùng.png" alt="Công trình 4" class="object-cover w-full h-full group-hover:opacity-60 transition duration-300">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-center px-4 opacity-0 group-hover:opacity-100 transition bg-black bg-opacity-50">
+                  Thiết kế - Thi công nội thất biệt thự anh Hùng
+                </div>
+              </div>
+              <div class="relative group h-64 overflow-hidden">
+                <img src="assets/images/cong-trinh/Thiết kế - Thi công nội thất chung cư.jpg" alt="Công trình 5" class="object-cover w-full h-full group-hover:opacity-60 transition duration-300">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-center px-4 opacity-0 group-hover:opacity-100 transition bg-black bg-opacity-50">
+                  Thiết kế - Thi công nội thất chung cư
+                </div>
+              </div>
+              <div class="relative group h-64 overflow-hidden">
+                <img src="assets/images/cong-trinh/Thiết kế - Thi công nội thất Marina Suite.jpg" alt="Công trình 6" class="object-cover w-full h-full group-hover:opacity-60 transition duration-300">
+                <div class="absolute inset-0 flex items-center justify-center text-white text-center px-4 opacity-0 group-hover:opacity-100 transition bg-black bg-opacity-50">
+                  Thiết kế - Thi công nội thất Marina Suite
+                </div>
+              </div>
+                <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">Thiết kế - Thi công biệt thự KĐT Mỹ Gia An Khánh</div>
+              </div>
+              <!-- lặp lại 5 lần với nội dung khác nhau -->
+            </div>
+          </div>
+        </section>
+      
+        <!-- PHẢN HỒI TỪ KHÁCH HÀNG -->
+<section class="py-16 bg-gray-100">
+  <div class="">
+    <h2 class="text-3xl font-bold text-center text-[#EA4E24] mb-8">PHẢN HỒI TỪ KHÁCH HÀNG</h2>
+    <div class="swiper feedbackSwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative">
+          <!-- Background Image -->
+          <div class="h-[400px] bg-cover bg-center" style="background-image: url('./assets/images//feedback.jpg');">
+            <!-- Caption Overlay -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-white w-1/2 bg-black bg-opacity-40 rounded-xl p-4 flex">
+                <div class="w-20 h-20 mx-auto mb-4">
+                  <img src="https://placehold.co/300" alt="Customer Avatar" class="rounded-full object-cover w-full h-full">
+                </div>
+                <div>
+                  <span class="block mt-4 font-bold text-white">Mr.Tống - Chủ căn hộ biệt thự</span>
+              
+                  <p class="italic">“Thật sự ấn tượng với cách Gỗ Bào Concept thổi hồn vào không gian sống...”</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative">
+          <!-- Background Image -->
+          <div class="h-[400px] bg-cover bg-center" style="background-image: url('https://source.unsplash.com/800x400/?apartment');">
+            <!-- Caption Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <div class="text-white text-center w-1/2">
+                <div class="w-20 h-20 mx-auto mb-4">
+                  <img src="https://placehold.co/300" alt="Customer Avatar" class="rounded-full object-cover w-full h-full">
+                </div>
+                <p class="italic">“Không gian sống của tôi đã thay đổi hoàn toàn nhờ Gỗ Bào Concept.”</p>
+                <span class="block mt-4 font-bold text-[#EA4E24]">Ms.Hoa - Chủ căn hộ chung cư</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+</section>
+      
+        <!-- NỘI THẤT / KIẾN TRÚC / THI CÔNG MỚI -->
+        <section class="py-16 bg-white">
+          <div class="container mx-auto px-6">
+            <div class="grid grid-cols-4 gap-6">
+              <!-- Row 1 -->
+              <div class="bg-gray-200 flex items-center justify-center font-bold text-center">Nội thất mới</div>
+              <div class="bg-gray-100 h-40"></div>
+              <div class="bg-gray-100 h-40"></div>
+              <div class="bg-gray-100 h-40"></div>
+              <!-- Row 2 -->
+              <div class="bg-gray-300 flex items-center justify-center font-bold text-center">Kiến trúc mới</div>
+              <div class="bg-gray-100 h-40"></div>
+              <div class="bg-gray-100 h-40"></div>
+              <div class="bg-gray-100 h-40"></div>
+              <!-- Row 3 -->
+              <div class="bg-gray-400 flex items-center justify-center font-bold text-center">Thi công mới</div>
+              <div class="bg-gray-100 h-40"></div>
+              <div class="bg-gray-100 h-40"></div>
+              <div class="bg-gray-100 h-40"></div>
+            </div>
+          </div>
+        </section>
+      
+        <!-- TIN TỨC NỔI BẬT -->
+        <section class="py-16 bg-gray-50">
+          <div class="container mx-auto px-6">
+            <h2 class="flex flex-row flex-nowrap items-center mb-8 text-[#EA4E24]">
+              <span class="flex-grow block border-t border-[#EA4E24]"></span>
+              <span class="text-3xl font-bold flex-none block mx-4 px-4 py-2.5 rounded leading-none">
+                TIN TỨC NỔI BẬT
+              </span>
+              <span class="flex-grow block border-t border-[#EA4E24]"></span>
+          </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div class="bg-white p-4 shadow"> <h3 class="font-bold">TIÊU ĐỀ BÀI VIẾT</h3> <p>Trích nội dung bài viết 3 hàng</p></div>
+              <!-- thêm 7 bài viết khác -->
+            </div>
+          </div>
+        </section>
+      
+        <!-- FOOTER -->
+        <footer class="bg-white text-black py-12">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+    <div>
+      <h4 class="font-bold mb-2 text-2xl">VỀ CHÚNG TÔI</h4>
+      <div class="mb-4">
+        <p>CÔNG TY TNHH NỘI THẤT KIẾN TRÚC GỖ BÀO CONCEPT</p>
+      <p>Điện thoại: 0902.696.994 - 0989.964.054</p>
+      <p>Email: gobao.concept.vn@gmail.com</p>
+      </div>
+      <h4 class="font-bold mb-2 text-[#EA4E24] text-2xl uppercase">Bản đồ</h4>
+    </div>
+    <div>
+      <h4 class="font-bold mb-2 text-2xl uppercase">Hotline CSKH</h4>
+      <p class="font-bold mb-4">Tổng đài tiếp nhận phản hồi dịch vụ và thông tin
+        tư vấn qua hotline:</p>
+      <a class="bg-[#EA4E24] mb-4 block py-2 px-3 text-white text-xl">Hotline: 09099999</a>
+      <h4 class="font-bold mb-2 text-[#EA4E24] text-2xl uppercase">Hỗ trợ khách hàng</h4>
+      <ul class="mb-4">
+        <li>Chính sách bảo mật</li>
+        <li>Bảo hành bảo trì</li>
+        <li>Câu hỏi thường gặp</li>
+      </ul>
+      <h4 class="font-bold mb-2">GIỜ LÀM VIỆC</h4>
+      <p>Thứ 2 - Thứ 7: 8h00 - 17h00</p>
+    </div>
+    <div>
+      <h4 class="font-bold mb-2 text-2xl">ĐĂNG KÝ TƯ VẤN</h4>
+      <form class="flex flex-col space-y-2">
+        <input type="text" placeholder="Tên*" class="p-2 text-black bg-[#EA4E24] border-0" />
+        <input type="tel" placeholder="Số điện thoại*" class="p-2 text-black bg-[#EA4E24] border-0" />
+        <input type="text" placeholder="Dịch vụ cần tư vấn*" class="p-2 text-black bg-[#EA4E24] border-0" />
+        <button class="bg-red-600 inline p-2 text-white font-bold border-0">GỬI</button>
+      </form>
+    </div>
+  </div>
+</footer>
+      
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+          var swiperHeader = new Swiper(".swiperHeader", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+          });
+          var feedbackSwiper = new Swiper(".feedbackSwiper", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+          });
+        </script>
+      </body>
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+
+</html>

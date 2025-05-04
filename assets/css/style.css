@@ -1,0 +1,22 @@
+#app {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo-bg {
+  background: linear-gradient(-58deg, transparent 45px, #000 0) right no-repeat;
+}
+.header-search {
+  background: linear-gradient(-58deg, transparent -5px, #fff 0) right no-repeat;
+}
+
+@media screen and (min-width: theme("screens.xl")) {
+  .container {
+    max-width: theme("screens.xl");
+  }
+}
