@@ -10,7 +10,12 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        another: resolve(__dirname, "another.html"),
+        about: resolve(__dirname, "about.html"),
+      },
+      output: {
+        entryFileNames: "assets/[name].js",
+        chunkFileNames: "assets/[name].js",
+        assetFileNames: "assets/[name].[ext]",
       },
     },
   },

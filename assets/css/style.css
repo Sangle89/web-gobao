@@ -3,16 +3,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .logo-bg {
   background: linear-gradient(-58deg, transparent 45px, #000 0) right no-repeat;
+  padding-right: 50px;
 }
 .header-search {
-  background: linear-gradient(-58deg, transparent -5px, #fff 0) right no-repeat;
+  background: linear-gradient(-58deg, transparent 28px, #fff 0) right no-repeat;
+}
+form input::placeholder {
+  color: #fff;
 }
 
 @media screen and (min-width: theme("screens.xl")) {
